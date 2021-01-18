@@ -1,0 +1,7 @@
+mixin navbar(json = "navbar")
+    -let items = require(`Blocks/navbar/json/${json}.json`).items;
+    .navbar__wrapper
+        ul.navbar
+            each item in items
+                li.navbar__item
+                    a.href.navbar__ref(href=item.ref)= item.name

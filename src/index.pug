@@ -1,0 +1,21 @@
+include ./blocks/navbar/navbar
+include ./blocks/contacts/contacts
+include ./blocks/choice/choice
+include ./blocks/mission/mission
+include ./blocks/collection/collection
+include ./blocks/registration/registration
+include ./blocks/footer/footer
+doctype html
+html(lang='ru')
+    head
+        meta(charset='utf-8')
+        meta(content='width=device-width, initial-scale=1.0' name='viewport')
+        title Лучшее вино со всего света
+    body
+        +contacts()
+        +navbar()
+        +choice()
+        +mission()
+        +collection()
+        +registration()
+        +footer()

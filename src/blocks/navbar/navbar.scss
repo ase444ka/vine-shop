@@ -1,0 +1,25 @@
+.navbar {
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    margin-top: -0.7rem;
+    &__item {
+        border: 1px solid white;
+        border-left: none;
+        list-style-type: none;
+        text-align: center;
+        width: 250px;
+        flex-shrink: 1;
+        flex-grow: 1;
+        &:last-child {
+            border-right: none;
+        }
+    }
+    &__ref {
+        display: inline-block;
+        padding: 0.85rem 0;
+        width: 100%;
+        text-decoration: none;
+        color: white;
+    }
+}

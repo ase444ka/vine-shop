@@ -1,0 +1,6 @@
+mixin contacts(json = "contacts")
+     -let contacts = require(`Blocks/contacts/json/${json}.json`);
+     .contacts__wrapper
+      .contacts
+         contacts__address= contacts.address
+         contacts__phone= contacts.phone

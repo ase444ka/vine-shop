@@ -1,0 +1,7 @@
+mixin mission(json = "mission") 
+    -let mission = require(`Blocks/mission/json/${json}.json`)
+    .mission__wrapper
+        .mission
+            .mission__slogan= mission.slogan
+            .mission__content= mission.content
+            img(src = require(`Blocks/mission/images/${mission.image}.png`)).mission__image

@@ -1,0 +1,13 @@
+{
+    "header": "Запись на дегустацию",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat enim tortor in hac id imperdiet adipiscing. Pellentesque nisi, mi sit non sit sed fermentum. ",
+    "name": "Имя",
+    "phone": "Телефон",
+    "shopList": [
+        "Центральная, 52",
+        "Венская 57",
+        "Гагарина 17",
+        "Чапыгина 6"
+    ],
+    "button": "Записаться"
+}

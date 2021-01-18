@@ -1,0 +1,15 @@
+mixin registration(json = "registration") 
+    -let registration= require(`Blocks/registration/json/${json}.json`)
+    .registration__wrapper 
+        .registration
+            .registration__header= registration.header
+            .registration__text= registration.text
+            form.registration__form
+                input.registration__name(name = "name" placeholder = registration.name || "имечко")
+                input.registration__phone(name = "phone" placeholder = registration.phone || "телефончик")
+                select.registration__shop(name = "shop" placeholder = "адресок")
+                    each shop in registration.shopList
+                        option(value = shop)=shop
+                input(type = "submit" value= registration.button).registration__button
+
+    

@@ -1,0 +1,24 @@
+mixin collection(json = "collection") 
+    -let collection = require(`Blocks/collection/json/${json}.json`)
+    
+    .collection__wrapper
+        .collection
+            .collection__text
+                .collection__benefit= collection.benefit || ""
+                .collection__date= collection.date
+                .collection__name= collection.name
+                .collection__description!= collection.descriptions[0] || ""
+                table.collection__table
+                    each val in collection.list
+                        tr
+                            td= val.year
+                            td
+                                .collection__vine= val.vine
+                                span= val.about
+                .collection__description!= collection.descriptions[1] || ""
+                
+            .collection__gallery
+                each img in collection.images
+                    .collection__img
+                        img(src = require(`Blocks/collection/images/${img}.png`))
+            .collection__button= collection.button || "узнать подробнее"

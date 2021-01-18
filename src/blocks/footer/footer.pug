@@ -1,0 +1,18 @@
+mixin footer(json = "footer") 
+    -let footer  = require(`Blocks/footer/json/${json}.json`)
+    .footer__wrapper
+        .footer
+            ul.footer__nav
+                each ref,name in footer.nav
+                    li.footer__nav__item
+                        a(href = ref)= name
+            .footer__contacts
+                each ref,name in footer.site1
+                    a.footer__site1(href=ref)= name
+                .footer__phone=footer.phone
+                .footer__socials
+                    each ref,name in footer.socials
+                        a.footer__social(href=ref)= name
+                each ref,name in footer.site2
+                    a.footer__site2(href=ref)= name
+    

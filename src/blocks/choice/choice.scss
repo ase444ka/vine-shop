@@ -1,0 +1,18 @@
+.choice {
+    margin-top: calc(25%);
+    justify-content: center;
+    display: flex;
+    &__item {
+        background: #99862A;
+        list-style-type: none;
+        display: inline-block;
+        margin: 0 1rem;
+    }
+    &__ref {
+        display: inline-block;
+        text-transform: uppercase;
+        color: white;
+        text-decoration: none;
+        padding: 1rem;
+    }
+}
